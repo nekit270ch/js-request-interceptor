@@ -8,11 +8,11 @@ JavaScript-библиотека, позволяющая перехватыват
 `callback` - функция, получающая данные с сервера и возвращающая измененнное значение
 
 `callback` передается объект, содержащий следующие свойства: 
-- `request`
-- для XHR - `method`, `url` и `isAsync`
-- для Fetch - `url` и `params`
-- для WebSocket - `data` и `event`
+- `request`;
+- для XHR - `method`, `url` и `async`;
+- для Fetch - `url` и `params`;
+- для WebSocket - `data` и `event`.
 
 `callback` должна возвращать:  
-- для XHR и Fetch - переданный объект
-- для WebSocket - полученные данные
+- для XHR и Fetch - переданный объект;
+- для WebSocket - полученные данные.
