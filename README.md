@@ -3,6 +3,7 @@ JavaScript-библиотека, позволяющая перехватыват
 
 ## Использование
 > `intercept(requestType, callback)`  
+
 `requestType` - тип запроса (`xhr`, `fetch` или `websocket`)  
 `callback` - функция, получающая данные с сервера и возвращающая измененнное значение
 
