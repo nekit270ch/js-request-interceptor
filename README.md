@@ -2,6 +2,12 @@
 JavaScript-библиотека, позволяющая перехватывать запросы XHR, Fetch и WebSocket
 
 ## Использование
-`intercept(requestType, callback)`<br>
-`requestType` - тип запроса (xhr, fetch или websocket)<br>
+`intercept(requestType, callback)`  
+`requestType` - тип запроса (`xhr`, `fetch` или `websocket`)  
 `callback` - функция, получающая данные с сервера и возвращающая измененнное значение
+
+`callback` передается объект, содержащий следующие свойства: 
+- request
+- для XHR - `method`, `url` и `isAsync`
+- для Fetch - `url` и `params`
+- для WebSocket - `data` и `event`
